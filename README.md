@@ -1,6 +1,6 @@
 # BOSH-Learn
 
-These instructions are a mixture of two tutorials - [Deploy BOSH on Google Cloud Platform](https://githubusercontent.com/cloudfoundry-incubator/bosh-google-cpi-release/master/docs/bosh/README.md) and [A Guide to Using BOSH](http://mariash.github.io/learn-bosh/#create_release).
+These instructions are a mixture of two tutorials - [Deploy BOSH on Google Cloud Platform](https://github.com/cloudfoundry-incubator/bosh-google-cpi-release/blob/master/docs/bosh/README.md) and [A Guide to Using BOSH](http://mariash.github.io/learn-bosh/#create_release).
 
 ## The reason for combining the two guides:
 1. I wanted my BOSH instance in the Cloud rather than hosted locally on Virtualbox
