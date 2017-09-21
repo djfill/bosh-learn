@@ -1,4 +1,4 @@
-# bosh-learn
+# BOSH-Learn
 Deploy Bosh Director on Google Cloud then 'do stuff'
 
 These instructions are a mixture of two tutorials - [Deploy BOSH on Google Cloud Platform](https://raw.githubusercontent.com/cloudfoundry-incubator/bosh-google-cpi-release/master/docs/bosh/README.md) and [A Guide to Using BOSH](http://mariash.github.io/learn-bosh/#create_release).
