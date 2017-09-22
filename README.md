@@ -10,10 +10,13 @@ These instructions are a mixture of two tutorials - [Deploy BOSH on Google Cloud
 ## Step by step guide
 
 1. Follow the instructions as described [here](https://github.com/cloudfoundry-incubator/bosh-google-cpi-release/blob/master/docs/bosh/README.md) up to # Deploy other software
-2. 
-3. SSH on to the bosh bastion:
+2. SSH on to the bosh bastion:
+   ```
    gcloud compute ssh bosh-bastion
-4. Clone this repository: 
+   ```
+3. Clone this repository: 
+   ```
    git clone https://github.com/djfill/bosh-learn.git
-5. 
+   ```
+4. 
 
