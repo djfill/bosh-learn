@@ -48,10 +48,6 @@ These instructions are a mixture of two tutorials - [Deploy BOSH on Google Cloud
    cd bosh-learn
    bosh2 -e micro-google create-release
    ```
-   a. View the Releases:
-   ```
-   bosh2 -e micro-google releases
-   ```
 7. Deploy:
    ```
    bosh2 -e micro-google -d learn-bosh deploy manifest.yml
