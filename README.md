@@ -45,10 +45,17 @@ These instructions are a mixture of two tutorials - [Deploy BOSH on Google Cloud
    ```
 6. Create a Release:
    ```
-   cd bosh-learn
    bosh2 -e micro-google create-release
    ```
-7. Deploy:
+7. Upload the Release:
+   ```
+   bosh2 -e micro-google upload-release
+   ```
+   a. View the Release:
+   ```
+   bosh2 -e micro-google releases
+   ```
+8. Deploy:
    ```
    bosh2 -e micro-google -d learn-bosh deploy manifest.yml
    ```
@@ -56,7 +63,7 @@ These instructions are a mixture of two tutorials - [Deploy BOSH on Google Cloud
    ```
    bosh2 -e micro-google ds
    ```
-8. View the instances:
+9. View the instances:
    ```
    bosh2 -e micro-google -d learn-bosh instances
    ```
