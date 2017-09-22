@@ -10,6 +10,12 @@ These instructions are a mixture of two tutorials - [Deploy BOSH on Google Cloud
 ## Step by step guide
 
 1. Follow the instructions as described [here](https://github.com/cloudfoundry-incubator/bosh-google-cpi-release/blob/master/docs/bosh/README.md) up to the 'Deploy other software' section.
+   Note: I had to make the following change in Step 2 and 3 of 'Deploy Supporting Infrastructure')
+   ```
+   hashicorp/terraform:light
+   to
+   hashicorp/terraform:0.9.9
+   ```
 2. SSH on to the bosh bastion:
    ```
    gcloud compute ssh bosh-bastion
