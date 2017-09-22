@@ -18,5 +18,17 @@ These instructions are a mixture of two tutorials - [Deploy BOSH on Google Cloud
    ```
    git clone https://github.com/djfill/bosh-learn.git
    ```
-4. 
+4. Upload the Stemcell
+   ```
+   bosh2 -e micro-google upload-stemcell https://s3.amazonaws.com/bosh-core-stemcells/google/bosh-stemcell-3445.11-google-kvm-centos-7-go_agent.tgz
+   ```
+5. Create a Release
+   ```
+   cd bosh-learn
+   bosh2 -e micro-google create-release
+6. Deploy
+   ```
+   bosh2 -e micro-google -d learn-bosh deploy manifest.yml
+   ```
+   
 
