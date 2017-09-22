@@ -17,13 +17,14 @@ These instructions are a mixture of two tutorials - [Deploy BOSH on Google Cloud
    to
    hashicorp/terraform:0.9.9
    ```
-2. SSH on to the bosh bastion:
+2. Following on from the guide in the previous step, you should already be logged on to the bosh bastion. If not, SSH on to the bosh bastion:
    ```
    gcloud compute ssh bosh-bastion
    ```
 3. Clone this repository: 
    ```
    git clone https://github.com/djfill/bosh-learn.git
+   cd bosh-learn
    ```
 4. Upload the Cloud Config:
    ```
