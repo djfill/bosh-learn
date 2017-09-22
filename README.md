@@ -9,7 +9,7 @@ These instructions are a mixture of two tutorials - [Deploy BOSH on Google Cloud
 
 ## Step by step guide
 
-1. Follow the instructions as described [here](https://github.com/cloudfoundry-incubator/bosh-google-cpi-release/blob/master/docs/bosh/README.md) up to # Deploy other software
+1. Follow the instructions as described [here](https://github.com/cloudfoundry-incubator/bosh-google-cpi-release/blob/master/docs/bosh/README.md) up to the 'Deploy other software' section.
 2. SSH on to the bosh bastion:
    ```
    gcloud compute ssh bosh-bastion
@@ -18,17 +18,43 @@ These instructions are a mixture of two tutorials - [Deploy BOSH on Google Cloud
    ```
    git clone https://github.com/djfill/bosh-learn.git
    ```
-4. Upload the Stemcell
+4. Upload the Cloud Config:
+   ```
+   bosh2 -e micro-google update-cloud-config cloud-config.yml
+   ```
+   a. View the Cloud Config:
+   ```
+   bosh2 -e micro-google cc
+   ```
+5. Upload the Stemcell:
    ```
    bosh2 -e micro-google upload-stemcell https://s3.amazonaws.com/bosh-core-stemcells/google/bosh-stemcell-3445.11-google-kvm-centos-7-go_agent.tgz
    ```
-5. Create a Release
+   a. View the stemcells:
+   ```
+   bosh2 -e micro-google stemcells
+   ```
+6. Create a Release:
    ```
    cd bosh-learn
    bosh2 -e micro-google create-release
-6. Deploy
+   ```
+   a. View the Releases:
+   ```
+   bosh2 -e micro-google releases
+   ```
+7. Deploy:
    ```
    bosh2 -e micro-google -d learn-bosh deploy manifest.yml
    ```
+   a. View the Deployments:
+   ```
+   bosh2 -e micro-google ds
+   ```
+8. View the instances:
+   ```
+   bosh2 -e micro-google -d learn-bosh instances
+   ```
+
    
 
