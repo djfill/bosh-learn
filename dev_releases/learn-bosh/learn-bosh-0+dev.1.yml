@@ -1,0 +1,25 @@
+name: learn-bosh
+version: 0+dev.1
+commit_hash: 8ecf7b4
+uncommitted_changes: false
+jobs:
+- name: app
+  version: 1cf54f93d591221fe09ef9d03b2f90b9781991a3
+  fingerprint: 1cf54f93d591221fe09ef9d03b2f90b9781991a3
+  sha1: b6ce71d6104608c9ee588a710173d217e767770c
+- name: router
+  version: 31b604a701d3eeb98555efba51143a4af24ca66b
+  fingerprint: 31b604a701d3eeb98555efba51143a4af24ca66b
+  sha1: a15eb03a543e99d340d6ad9b968b8a249ad2de25
+packages:
+- name: ruby
+  version: aeb9acaed6ce2aa86ce1ce9f4017528be0e2041e
+  fingerprint: aeb9acaed6ce2aa86ce1ce9f4017528be0e2041e
+  sha1: 485d574a0d671b1f7b8b02511d5ba1781c9e760a
+  dependencies: []
+- name: simple_server
+  version: b4866ad2724e5c3d2182485f1888ec9fcc3845bc
+  fingerprint: b4866ad2724e5c3d2182485f1888ec9fcc3845bc
+  sha1: b457b9073c0ac9c2a05a18b99ae8b4c98d4f5394
+  dependencies:
+  - ruby
